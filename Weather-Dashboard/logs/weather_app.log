@@ -1,0 +1,219 @@
+2025-02-10 15:32:10 - INFO - Reading API key
+2025-02-10 15:32:10 - INFO - Starting Weather Dashboard application
+2025-02-10 15:32:10 - INFO - Initializing Weather Dashboard GUI
+2025-02-10 15:32:28 - INFO - Refreshing weather data for city: Masachussets
+2025-02-10 15:32:28 - INFO - Fetching weather data for location: Masachussets
+2025-02-10 15:32:28 - ERROR - API request failed with status code 404
+2025-02-10 15:32:28 - WARNING - City not found: Masachussets
+2025-02-10 15:32:28 - ERROR - Unexpected error: name 'get_city_list' is not defined
+2025-02-10 15:32:28 - ERROR - Error fetching weather data: name 'get_city_list' is not defined
+2025-02-10 15:32:28 - ERROR - Error dialog shown: name 'get_city_list' is not defined
+2025-02-10 15:32:35 - INFO - Refreshing weather data for city: Boston
+2025-02-10 15:32:35 - INFO - Fetching weather data for location: Boston
+2025-02-10 15:32:35 - INFO - Weather data successfully retrieved
+2025-02-10 15:32:35 - INFO - Updating weather display
+2025-02-10 15:32:57 - INFO - Refreshing weather data for city: Boston
+2025-02-10 15:32:57 - INFO - Fetching weather data for location: Boston
+2025-02-10 15:32:57 - INFO - Weather data successfully retrieved
+2025-02-10 15:32:57 - INFO - Updating weather display
+2025-02-10 15:33:01 - INFO - Refreshing weather data for city: Boston
+2025-02-10 15:33:01 - INFO - Fetching weather data for location: Boston
+2025-02-10 15:33:01 - INFO - Weather data successfully retrieved
+2025-02-10 15:33:01 - INFO - Updating weather display
+2025-02-10 15:33:03 - INFO - Application shutdown
+2025-02-10 15:46:23 - INFO - Reading API key
+2025-02-10 15:46:23 - INFO - Starting Weather Dashboard application
+2025-02-10 15:46:23 - INFO - Initializing Weather Dashboard GUI
+2025-02-10 15:46:33 - INFO - Refreshing weather data for city: Grambling
+2025-02-10 15:46:33 - INFO - Fetching weather data for location: Grambling
+2025-02-10 15:46:33 - INFO - Weather data successfully retrieved
+2025-02-10 15:46:33 - INFO - Fetching forecast data for location: Grambling
+2025-02-10 15:46:34 - INFO - Forecast data successfully retrieved
+2025-02-10 15:46:34 - INFO - Updating weather display
+2025-02-10 15:46:34 - INFO - Updating forecast display
+2025-02-10 15:46:35 - INFO - Refreshing weather data for city: Grambling
+2025-02-10 15:46:35 - INFO - Fetching weather data for location: Grambling
+2025-02-10 15:46:35 - INFO - Weather data successfully retrieved
+2025-02-10 15:46:35 - INFO - Fetching forecast data for location: Grambling
+2025-02-10 15:46:35 - INFO - Forecast data successfully retrieved
+2025-02-10 15:46:35 - INFO - Updating weather display
+2025-02-10 15:46:35 - INFO - Updating forecast display
+2025-02-10 15:48:50 - INFO - Application shutdown
+2025-02-10 15:49:45 - INFO - Reading API key
+2025-02-10 15:49:45 - INFO - Starting Weather Dashboard application
+2025-02-10 15:49:46 - INFO - Initializing Weather Dashboard GUI
+2025-02-10 15:49:57 - INFO - Refreshing weather data for city: Grambling
+2025-02-10 15:49:57 - INFO - Fetching weather data for location: Grambling
+2025-02-10 15:49:57 - INFO - Weather data successfully retrieved
+2025-02-10 15:49:57 - INFO - Fetching forecast data for location: Grambling
+2025-02-10 15:49:58 - INFO - Forecast data successfully retrieved
+2025-02-10 15:49:58 - INFO - Updating weather display
+2025-02-10 15:49:58 - INFO - Updating forecast display
+2025-02-10 15:49:58 - ERROR - Error updating forecast display: unknown option "-alpha"
+2025-02-10 15:49:58 - ERROR - Error dialog shown: Error updating forecast display: unknown option "-alpha"
+2025-02-10 15:50:19 - INFO - Refreshing weather data for city: Kumasi
+2025-02-10 15:50:19 - INFO - Fetching weather data for location: Kumasi
+2025-02-10 15:50:19 - INFO - Weather data successfully retrieved
+2025-02-10 15:50:19 - INFO - Fetching forecast data for location: Kumasi
+2025-02-10 15:50:19 - INFO - Forecast data successfully retrieved
+2025-02-10 15:50:19 - INFO - Updating weather display
+2025-02-10 15:50:19 - INFO - Updating forecast display
+2025-02-10 15:50:19 - ERROR - Error updating forecast display: unknown option "-alpha"
+2025-02-10 15:50:19 - ERROR - Error dialog shown: Error updating forecast display: unknown option "-alpha"
+2025-02-10 15:50:30 - INFO - Refreshing weather data for city: Kumasi
+2025-02-10 15:50:30 - INFO - Fetching weather data for location: Kumasi
+2025-02-10 15:50:30 - INFO - Weather data successfully retrieved
+2025-02-10 15:50:30 - INFO - Fetching forecast data for location: Kumasi
+2025-02-10 15:50:30 - INFO - Forecast data successfully retrieved
+2025-02-10 15:50:30 - INFO - Updating weather display
+2025-02-10 15:50:30 - INFO - Updating forecast display
+2025-02-10 15:50:30 - ERROR - Error updating forecast display: unknown option "-alpha"
+2025-02-10 15:50:30 - ERROR - Error dialog shown: Error updating forecast display: unknown option "-alpha"
+2025-02-10 15:52:36 - INFO - Application shutdown
+2025-02-10 15:52:46 - INFO - Reading API key
+2025-02-10 15:52:46 - INFO - Starting Weather Dashboard application
+2025-02-10 15:52:46 - INFO - Initializing Weather Dashboard GUI
+2025-02-10 15:52:53 - INFO - Refreshing weather data for city: Grambling
+2025-02-10 15:52:53 - INFO - Fetching weather data for location: Grambling
+2025-02-10 15:52:54 - INFO - Weather data successfully retrieved
+2025-02-10 15:52:54 - INFO - Fetching forecast data for location: Grambling
+2025-02-10 15:52:54 - INFO - Forecast data successfully retrieved
+2025-02-10 15:52:54 - INFO - Updating weather display
+2025-02-10 15:52:54 - INFO - Updating forecast display
+2025-02-10 15:55:31 - INFO - Application shutdown
+2025-02-10 15:56:30 - INFO - Reading API key
+2025-02-10 15:56:30 - INFO - Starting Weather Dashboard application
+2025-02-10 15:56:30 - INFO - Initializing Weather Dashboard GUI
+2025-02-10 15:56:38 - INFO - Refreshing weather data for city: Grambling
+2025-02-10 15:56:38 - INFO - Fetching weather data for location: Grambling
+2025-02-10 15:56:38 - INFO - Weather data successfully retrieved
+2025-02-10 15:56:38 - INFO - Fetching forecast data for location: Grambling
+2025-02-10 15:56:38 - INFO - Forecast data successfully retrieved
+2025-02-10 15:56:38 - INFO - Updating weather display
+2025-02-10 15:56:38 - INFO - Updating forecast display
+2025-02-10 15:57:56 - INFO - Application shutdown
+2025-02-10 15:58:10 - INFO - Reading API key
+2025-02-10 15:58:10 - INFO - Starting Weather Dashboard application
+2025-02-10 15:58:10 - INFO - Initializing Weather Dashboard GUI
+2025-02-10 15:58:18 - INFO - Refreshing weather data for city: Grambling canvas
+2025-02-10 15:58:18 - INFO - Fetching weather data for location: Grambling canvas
+2025-02-10 15:58:18 - ERROR - API request failed with status code 404
+2025-02-10 15:58:18 - WARNING - City not found: Grambling canvas
+2025-02-10 15:58:18 - ERROR - Unexpected error: name 'get_city_list' is not defined
+2025-02-10 15:58:18 - ERROR - Error fetching weather data: name 'get_city_list' is not defined
+2025-02-10 15:58:18 - ERROR - Error dialog shown: name 'get_city_list' is not defined
+2025-02-10 15:58:26 - INFO - Refreshing weather data for city: Grambling
+2025-02-10 15:58:26 - INFO - Fetching weather data for location: Grambling
+2025-02-10 15:58:26 - INFO - Weather data successfully retrieved
+2025-02-10 15:58:26 - INFO - Fetching forecast data for location: Grambling
+2025-02-10 15:58:26 - INFO - Forecast data successfully retrieved
+2025-02-10 15:58:26 - INFO - Updating weather display
+2025-02-10 15:58:26 - INFO - Updating forecast display
+2025-02-10 16:01:12 - INFO - Refreshing weather data for city: Grambling
+2025-02-10 16:01:12 - INFO - Fetching weather data for location: Grambling
+2025-02-10 16:01:12 - INFO - Weather data successfully retrieved
+2025-02-10 16:01:12 - INFO - Fetching forecast data for location: Grambling
+2025-02-10 16:01:12 - INFO - Forecast data successfully retrieved
+2025-02-10 16:01:12 - INFO - Updating weather display
+2025-02-10 16:01:12 - INFO - Updating forecast display
+2025-02-10 16:01:14 - INFO - Refreshing weather data for city: Grambling
+2025-02-10 16:01:14 - INFO - Fetching weather data for location: Grambling
+2025-02-10 16:01:14 - INFO - Weather data successfully retrieved
+2025-02-10 16:01:14 - INFO - Fetching forecast data for location: Grambling
+2025-02-10 16:01:14 - INFO - Forecast data successfully retrieved
+2025-02-10 16:01:14 - INFO - Updating weather display
+2025-02-10 16:01:15 - INFO - Updating forecast display
+2025-02-10 16:01:52 - INFO - Application shutdown
+2025-02-10 16:02:05 - INFO - Reading API key
+2025-02-10 16:02:05 - INFO - Starting Weather Dashboard application
+2025-02-10 16:02:05 - INFO - Initializing Weather Dashboard GUI
+2025-02-10 16:02:12 - INFO - Refreshing weather data for city: Grambling
+2025-02-10 16:02:12 - INFO - Fetching weather data for location: Grambling
+2025-02-10 16:02:12 - INFO - Weather data successfully retrieved
+2025-02-10 16:02:12 - INFO - Fetching forecast data for location: Grambling
+2025-02-10 16:02:12 - INFO - Forecast data successfully retrieved
+2025-02-10 16:02:12 - INFO - Updating weather display
+2025-02-10 16:02:12 - INFO - Updating forecast display
+2025-02-10 16:02:15 - WARNING - Unknown weather condition: heavy intensity rain
+2025-02-10 16:02:15 - WARNING - Unknown weather condition: heavy intensity rain
+2025-02-10 16:02:25 - INFO - Refreshing weather data for city: Grambling
+2025-02-10 16:02:25 - INFO - Fetching weather data for location: Grambling
+2025-02-10 16:02:25 - INFO - Weather data successfully retrieved
+2025-02-10 16:02:25 - INFO - Fetching forecast data for location: Grambling
+2025-02-10 16:02:25 - INFO - Forecast data successfully retrieved
+2025-02-10 16:02:25 - INFO - Updating weather display
+2025-02-10 16:02:25 - INFO - Updating forecast display
+2025-02-10 16:02:25 - WARNING - Unknown weather condition: heavy intensity rain
+2025-02-10 16:02:25 - WARNING - Unknown weather condition: heavy intensity rain
+2025-02-10 16:02:31 - INFO - Refreshing weather data for city: Austin
+2025-02-10 16:02:31 - INFO - Fetching weather data for location: Austin
+2025-02-10 16:02:31 - INFO - Weather data successfully retrieved
+2025-02-10 16:02:31 - INFO - Fetching forecast data for location: Austin
+2025-02-10 16:02:31 - INFO - Forecast data successfully retrieved
+2025-02-10 16:02:31 - INFO - Updating weather display
+2025-02-10 16:02:31 - INFO - Updating forecast display
+2025-02-10 16:03:50 - INFO - Refreshing weather data for city: Austin
+2025-02-10 16:03:50 - INFO - Fetching weather data for location: Austin
+2025-02-10 16:03:50 - INFO - Weather data successfully retrieved
+2025-02-10 16:03:50 - INFO - Fetching forecast data for location: Austin
+2025-02-10 16:03:50 - INFO - Forecast data successfully retrieved
+2025-02-10 16:03:50 - INFO - Updating weather display
+2025-02-10 16:03:50 - INFO - Updating forecast display
+2025-02-10 16:03:55 - INFO - Refreshing weather data for city: Kumasi
+2025-02-10 16:03:55 - INFO - Fetching weather data for location: Kumasi
+2025-02-10 16:03:55 - INFO - Weather data successfully retrieved
+2025-02-10 16:03:55 - INFO - Fetching forecast data for location: Kumasi
+2025-02-10 16:03:55 - INFO - Forecast data successfully retrieved
+2025-02-10 16:03:55 - INFO - Updating weather display
+2025-02-10 16:03:55 - INFO - Updating forecast display
+2025-02-10 16:10:15 - INFO - Refreshing weather data for city: Nepal
+2025-02-10 16:10:15 - INFO - Fetching weather data for location: Nepal
+2025-02-10 16:10:15 - INFO - Weather data successfully retrieved
+2025-02-10 16:10:15 - INFO - Fetching forecast data for location: Nepal
+2025-02-10 16:10:15 - INFO - Forecast data successfully retrieved
+2025-02-10 16:10:15 - INFO - Updating weather display
+2025-02-10 16:10:15 - INFO - Updating forecast display
+2025-02-10 16:10:22 - INFO - Refreshing weather data for city: Bolgatanga
+2025-02-10 16:10:22 - INFO - Fetching weather data for location: Bolgatanga
+2025-02-10 16:10:22 - INFO - Weather data successfully retrieved
+2025-02-10 16:10:22 - INFO - Fetching forecast data for location: Bolgatanga
+2025-02-10 16:10:22 - INFO - Forecast data successfully retrieved
+2025-02-10 16:10:22 - INFO - Updating weather display
+2025-02-10 16:10:22 - INFO - Updating forecast display
+2025-02-10 16:10:37 - INFO - Refreshing weather data for city: North Suntreso
+2025-02-10 16:10:37 - INFO - Fetching weather data for location: North Suntreso
+2025-02-10 16:10:37 - ERROR - API request failed with status code 404
+2025-02-10 16:10:37 - WARNING - City not found: North Suntreso
+2025-02-10 16:10:37 - ERROR - Unexpected error: name 'get_city_list' is not defined
+2025-02-10 16:10:37 - ERROR - Error fetching weather data: name 'get_city_list' is not defined
+2025-02-10 16:10:37 - ERROR - Error dialog shown: name 'get_city_list' is not defined
+2025-02-10 16:10:46 - INFO - Refreshing weather data for city: Koforidua
+2025-02-10 16:10:46 - INFO - Fetching weather data for location: Koforidua
+2025-02-10 16:10:46 - INFO - Weather data successfully retrieved
+2025-02-10 16:10:46 - INFO - Fetching forecast data for location: Koforidua
+2025-02-10 16:10:46 - INFO - Forecast data successfully retrieved
+2025-02-10 16:10:46 - INFO - Updating weather display
+2025-02-10 16:10:46 - INFO - Updating forecast display
+2025-02-10 16:10:50 - INFO - Application shutdown
+2025-02-10 16:23:25 - INFO - Reading API key
+2025-02-10 16:23:25 - INFO - Starting Weather Dashboard application
+2025-02-10 16:23:25 - CRITICAL - Critical error in main loop: unknown option "-placeholder_text"
+2025-02-10 16:23:25 - CRITICAL - Failed to start application: unknown option "-placeholder_text"
+2025-02-10 16:23:35 - INFO - Application shutdown
+2025-02-10 16:26:09 - INFO - Reading API key
+2025-02-10 16:26:09 - INFO - Starting Weather Dashboard application
+2025-02-10 16:26:10 - CRITICAL - Critical error in main loop: unknown option "-padx"
+2025-02-10 16:26:10 - CRITICAL - Failed to start application: unknown option "-padx"
+2025-02-10 16:26:21 - INFO - Application shutdown
+2025-02-10 16:27:22 - INFO - Reading API key
+2025-02-10 16:27:22 - INFO - Starting Weather Dashboard application
+2025-02-10 16:27:41 - INFO - Refreshing weather data for city: Grambling
+2025-02-10 16:27:41 - INFO - Fetching weather data for location: Grambling
+2025-02-10 16:27:42 - INFO - Weather data successfully retrieved
+2025-02-10 16:27:42 - INFO - Fetching forecast data for location: Grambling
+2025-02-10 16:27:42 - INFO - Forecast data successfully retrieved
+2025-02-10 16:27:42 - INFO - Updating weather display
+2025-02-10 16:27:42 - INFO - Updating forecast display
+2025-02-10 16:27:45 - WARNING - Unknown weather condition: heavy intensity rain
+2025-02-10 16:27:45 - WARNING - Unknown weather condition: heavy intensity rain
+2025-02-10 16:28:00 - INFO - Application shutdown
