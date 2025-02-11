@@ -16,6 +16,9 @@ import os
 import logging
 from logging.handlers import RotatingFileHandler
 from datetime import timedelta
+import sqlite3
+from geopy.geocoders import Nominatim
+from geopy.distance import geodesic
 
 
 # Setup logging configuration
@@ -414,6 +417,90 @@ def display_error(error_msg, suggestion=None):
     print(f"{Fore.RED}{'='*50}{Style.RESET_ALL}")
 
 
+class UserPreferences:
+    def __init__(self):
+        self.db_path = "weather_preferences.db"
+        self.setup_database()
+        self.load_preferences()
+
+    def setup_database(self):
+        """Create database and tables if they don't exist"""
+        with sqlite3.connect(self.db_path) as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+                """
+                CREATE TABLE IF NOT EXISTS preferences (
+                    key TEXT PRIMARY KEY,
+                    value TEXT
+                )
+            """
+            )
+            cursor.execute(
+                """
+                CREATE TABLE IF NOT EXISTS favorite_locations (
+                    city TEXT PRIMARY KEY,
+                    country TEXT,
+                    lat REAL,
+                    lon REAL
+                )
+            """
+            )
+            conn.commit()
+
+    def load_preferences(self):
+        """Load user preferences from database"""
+        defaults = {
+            "units": "metric",  # metric or imperial
+            "default_city": "",
+            "refresh_interval": "30",  # minutes
+            "auto_detect_location": "true",
+        }
+
+        self.preferences = defaults.copy()
+
+        with sqlite3.connect(self.db_path) as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT key, value FROM preferences")
+            for key, value in cursor.fetchall():
+                self.preferences[key] = value
+
+    def save_preference(self, key, value):
+        """Save a single preference to database"""
+        with sqlite3.connect(self.db_path) as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+                "INSERT OR REPLACE INTO preferences (key, value) VALUES (?, ?)",
+                (key, str(value)),
+            )
+            conn.commit()
+        self.preferences[key] = value
+
+    def add_favorite(self, city, country, lat, lon):
+        """Add a location to favorites"""
+        with sqlite3.connect(self.db_path) as conn:
+            cursor = conn.cursor()
+            cursor.execute(
+                """INSERT OR REPLACE INTO favorite_locations 
+                   (city, country, lat, lon) VALUES (?, ?, ?, ?)""",
+                (city, country, lat, lon),
+            )
+            conn.commit()
+
+    def remove_favorite(self, city):
+        """Remove a location from favorites"""
+        with sqlite3.connect(self.db_path) as conn:
+            cursor = conn.cursor()
+            cursor.execute("DELETE FROM favorite_locations WHERE city = ?", (city,))
+            conn.commit()
+
+    def get_favorites(self):
+        """Get list of favorite locations"""
+        with sqlite3.connect(self.db_path) as conn:
+            cursor = conn.cursor()
+            cursor.execute("SELECT city, country FROM favorite_locations")
+            return cursor.fetchall()
+
+
 class WeatherDashboardGUI:
     def __init__(self, root):
         # Configure the root window with standard tkinter
@@ -449,22 +536,32 @@ class WeatherDashboardGUI:
         self.setup_current_weather_tab()
         self.setup_forecast_tab()
 
+        # Initialize user preferences
+        self.preferences = UserPreferences()
+
+        # Setup menu
+        self.setup_menu()
+
+        # Setup favorites dropdown
+        self.setup_favorites_dropdown()
+
     def setup_header(self):
         """Setup header with search bar and theme toggle"""
-        header_frame = ttk.Frame(self.main_frame)
-        header_frame.pack(fill="x", pady=(0, 10))
+        # Create header frame first
+        self.header_frame = ttk.Frame(self.main_frame)
+        self.header_frame.pack(fill="x", pady=(0, 10))
 
         # Search frame with city entry and refresh button
-        search_frame = ttk.Frame(header_frame)
+        search_frame = ttk.Frame(self.header_frame)
         search_frame.pack(side="left", fill="x", expand=True)
 
         self.city_var = tk.StringVar()
         city_entry = ttk.Entry(
             search_frame,
             textvariable=self.city_var,
-            width=40,  # Use width in characters instead of pixels
+            width=40,
         )
-        city_entry.insert(0, "Enter city name")  # Default text
+        city_entry.insert(0, "Enter city name")
         city_entry.pack(side="left", padx=(0, 10))
 
         # Bind Enter key to refresh
@@ -474,13 +571,13 @@ class WeatherDashboardGUI:
             search_frame,
             text="Refresh",
             command=self.refresh_weather,
-            width=10,  # Width in characters
+            width=10,
         )
         self.refresh_btn.pack(side="left")
 
         # Theme toggle button
         self.theme_btn = ttk.Button(
-            header_frame, text="🌙", command=self.toggle_theme, width=3
+            self.header_frame, text="🌙", command=self.toggle_theme, width=3
         )
         self.theme_btn.pack(side="right", padx=(10, 0))
 
@@ -935,6 +1032,153 @@ class WeatherDashboardGUI:
             return "#f46d43"  # Warm orange
         else:
             return "#d73027"  # Hot red
+
+    def setup_menu(self):
+        """Setup application menu"""
+        menubar = tk.Menu(self.root)
+        self.root.config(menu=menubar)
+
+        # Settings menu
+        settings_menu = tk.Menu(menubar, tearoff=0)
+        menubar.add_cascade(label="Settings", menu=settings_menu)
+        settings_menu.add_command(label="Preferences", command=self.show_preferences)
+        settings_menu.add_separator()
+        settings_menu.add_command(
+            label="Manage Favorites", command=self.manage_favorites
+        )
+
+    def setup_favorites_dropdown(self):
+        """Setup favorites dropdown in header"""
+        favorites_frame = ttk.Frame(self.header_frame)
+        favorites_frame.pack(side="left", padx=10)
+
+        self.favorites_var = tk.StringVar()
+        self.favorites_dropdown = ttk.Combobox(
+            favorites_frame, textvariable=self.favorites_var, width=30, state="readonly"
+        )
+        self.favorites_dropdown.pack(side="left")
+
+        # Bind selection event
+        self.favorites_dropdown.bind("<<ComboboxSelected>>", self.on_favorite_selected)
+
+        # Update favorites list
+        self.update_favorites_list()
+
+    def update_favorites_list(self):
+        """Update the favorites dropdown list"""
+        favorites = self.preferences.get_favorites()
+        self.favorites_dropdown["values"] = [
+            f"{city}, {country}" for city, country in favorites
+        ]
+
+    def on_favorite_selected(self, event):
+        """Handle favorite location selection"""
+        if self.favorites_var.get():
+            self.city_var.set(self.favorites_var.get())
+            self.refresh_weather()
+
+    def show_preferences(self):
+        """Show preferences dialog"""
+        prefs_window = tk.Toplevel(self.root)
+        prefs_window.title("Preferences")
+        prefs_window.geometry("400x300")
+
+        # Units frame
+        units_frame = ttk.LabelFrame(prefs_window, text="Units")
+        units_frame.pack(fill="x", padx=10, pady=5)
+
+        unit_var = tk.StringVar(value=self.preferences.preferences["units"])
+        ttk.Radiobutton(
+            units_frame, text="Metric (°C, m/s)", value="metric", variable=unit_var
+        ).pack(side="left", padx=5)
+        ttk.Radiobutton(
+            units_frame, text="Imperial (°F, mph)", value="imperial", variable=unit_var
+        ).pack(side="left", padx=5)
+
+        # Auto-detect location
+        auto_detect_var = tk.BooleanVar(
+            value=self.preferences.preferences["auto_detect_location"] == "true"
+        )
+        ttk.Checkbutton(
+            prefs_window,
+            text="Auto-detect location on startup",
+            variable=auto_detect_var,
+        ).pack(fill="x", padx=10, pady=5)
+
+        # Refresh interval
+        refresh_frame = ttk.LabelFrame(prefs_window, text="Refresh Interval")
+        refresh_frame.pack(fill="x", padx=10, pady=5)
+
+        refresh_var = tk.StringVar(
+            value=self.preferences.preferences["refresh_interval"]
+        )
+        ttk.Entry(refresh_frame, textvariable=refresh_var).pack(side="left", padx=5)
+        ttk.Label(refresh_frame, text="minutes").pack(side="left")
+
+        # Save button
+        def save_preferences():
+            self.preferences.save_preference("units", unit_var.get())
+            self.preferences.save_preference(
+                "auto_detect_location", str(auto_detect_var.get()).lower()
+            )
+            self.preferences.save_preference("refresh_interval", refresh_var.get())
+            prefs_window.destroy()
+            self.refresh_weather()  # Refresh with new settings
+
+        ttk.Button(prefs_window, text="Save", command=save_preferences).pack(pady=10)
+
+    def manage_favorites(self):
+        """Show favorites management dialog"""
+        favorites_window = tk.Toplevel(self.root)
+        favorites_window.title("Manage Favorites")
+        favorites_window.geometry("400x400")
+
+        # List of current favorites
+        favorites_frame = ttk.Frame(favorites_window)
+        favorites_frame.pack(fill="both", expand=True, padx=10, pady=5)
+
+        favorites = self.preferences.get_favorites()
+        for city, country in favorites:
+            location_frame = ttk.Frame(favorites_frame)
+            location_frame.pack(fill="x", pady=2)
+
+            ttk.Label(location_frame, text=f"{city}, {country}").pack(side="left")
+
+            ttk.Button(
+                location_frame,
+                text="Remove",
+                command=lambda c=city: self.remove_favorite(c),
+            ).pack(side="right")
+
+        # Add new favorite
+        add_frame = ttk.Frame(favorites_window)
+        add_frame.pack(fill="x", padx=10, pady=5)
+
+        new_city_var = tk.StringVar()
+        ttk.Entry(add_frame, textvariable=new_city_var).pack(
+            side="left", expand=True, fill="x", padx=(0, 5)
+        )
+
+        def add_new_favorite():
+            city = new_city_var.get().strip()
+            if city:
+                try:
+                    # Get coordinates using geocoding
+                    geolocator = Nominatim(user_agent="weather_dashboard")
+                    location = geolocator.geocode(city)
+                    if location:
+                        self.preferences.add_favorite(
+                            location.address.split(",")[0],
+                            location.address.split(",")[-1].strip(),
+                            location.latitude,
+                            location.longitude,
+                        )
+                        self.update_favorites_list()
+                        favorites_window.destroy()
+                except Exception as e:
+                    messagebox.showerror("Error", f"Could not add location: {str(e)}")
+
+        ttk.Button(add_frame, text="Add", command=add_new_favorite).pack(side="right")
 
 
 def fetch_forecast_data(location):
