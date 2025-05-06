@@ -12,6 +12,18 @@ from config.constants import DEFAULT_WINDOW_SIZE, MIN_WINDOW_SIZE
 class WeatherDashboard:
     def __init__(self, root, api_key):
         self.root = root
+        self.api_key = api_key
+
+        # Create notebook first
+        self.notebook = ttk.Notebook(self.root)
+        self.notebook.pack(expand=True, fill="both")
+
+        # Create tabs with notebook as parent
+        self.weather_tab = WeatherTab(self.notebook)  # Important: parent is notebook
+
+        # Add tab to notebook
+        self.notebook.add(self.weather_tab, text="Current Weather")
+
         self.setup_window()
         self.weather_service = WeatherService(api_key)
         self.preferences = UserPreferences()
