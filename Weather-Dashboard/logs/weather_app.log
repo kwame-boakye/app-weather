@@ -408,3 +408,212 @@
 2025-02-11 01:58:44 - WARNING - Unknown weather condition: heavy intensity rain
 2025-02-11 01:58:44 - WARNING - Unknown weather condition: heavy intensity rain
 2025-02-11 01:58:51 - INFO - Application shutdown
+2025-02-12 00:22:15 - INFO - Reading API key
+2025-02-12 00:22:15 - INFO - Starting Weather Dashboard application
+2025-02-12 00:22:24 - INFO - Refreshing weather data for city: Grambling
+2025-02-12 00:22:24 - INFO - Fetching weather data for location: Grambling
+2025-02-12 00:22:25 - INFO - Weather data successfully retrieved
+2025-02-12 00:22:25 - INFO - Fetching forecast data for location: Grambling
+2025-02-12 00:22:25 - INFO - Forecast data successfully retrieved
+2025-02-12 00:22:25 - INFO - Updating weather display
+2025-02-12 00:22:25 - INFO - Updating forecast display
+2025-02-12 00:22:25 - WARNING - Unknown weather condition: heavy intensity rain
+2025-02-12 00:22:32 - WARNING - Unknown weather condition: heavy intensity rain
+2025-02-12 00:22:32 - WARNING - Unknown weather condition: heavy intensity rain
+2025-02-12 00:22:32 - WARNING - Unknown weather condition: heavy intensity rain
+2025-02-12 00:22:45 - INFO - Refreshing weather data for city: Kumasi
+2025-02-12 00:22:45 - INFO - Fetching weather data for location: Kumasi
+2025-02-12 00:22:45 - INFO - Weather data successfully retrieved
+2025-02-12 00:22:45 - INFO - Fetching forecast data for location: Kumasi
+2025-02-12 00:22:45 - INFO - Forecast data successfully retrieved
+2025-02-12 00:22:45 - INFO - Updating weather display
+2025-02-12 00:22:45 - INFO - Updating forecast display
+2025-02-12 00:22:58 - INFO - Refreshing weather data for city: Koforidua
+2025-02-12 00:22:58 - INFO - Fetching weather data for location: Koforidua
+2025-02-12 00:22:58 - INFO - Weather data successfully retrieved
+2025-02-12 00:22:58 - INFO - Fetching forecast data for location: Koforidua
+2025-02-12 00:22:58 - INFO - Forecast data successfully retrieved
+2025-02-12 00:22:58 - INFO - Updating weather display
+2025-02-12 00:22:58 - INFO - Updating forecast display
+2025-02-12 00:23:09 - INFO - Refreshing weather data for city: Hutto
+2025-02-12 00:23:09 - INFO - Fetching weather data for location: Hutto
+2025-02-12 00:23:09 - INFO - Weather data successfully retrieved
+2025-02-12 00:23:09 - INFO - Fetching forecast data for location: Hutto
+2025-02-12 00:23:09 - INFO - Forecast data successfully retrieved
+2025-02-12 00:23:09 - INFO - Updating weather display
+2025-02-12 00:23:09 - INFO - Updating forecast display
+2025-02-12 00:23:26 - INFO - Refreshing weather data for city: Maryland
+2025-02-12 00:23:26 - INFO - Fetching weather data for location: Maryland
+2025-02-12 00:23:26 - INFO - Weather data successfully retrieved
+2025-02-12 00:23:26 - INFO - Fetching forecast data for location: Maryland
+2025-02-12 00:23:26 - INFO - Forecast data successfully retrieved
+2025-02-12 00:23:26 - INFO - Updating weather display
+2025-02-12 00:23:26 - INFO - Updating forecast display
+2025-02-12 00:23:53 - INFO - Refreshing weather data for city: New York
+2025-02-12 00:23:53 - INFO - Fetching weather data for location: New York
+2025-02-12 00:23:53 - INFO - Weather data successfully retrieved
+2025-02-12 00:23:53 - INFO - Fetching forecast data for location: New York
+2025-02-12 00:23:53 - INFO - Forecast data successfully retrieved
+2025-02-12 00:23:53 - INFO - Updating weather display
+2025-02-12 00:23:53 - INFO - Updating forecast display
+2025-02-12 00:23:53 - WARNING - Unknown weather condition: heavy intensity rain
+2025-02-12 00:23:59 - INFO - Application shutdown
+2025-02-16 18:54:31 - INFO - Reading API key
+2025-02-16 18:54:31 - INFO - Starting Weather Dashboard application
+2025-02-16 18:54:39 - INFO - Refreshing weather data for city: Grambling
+2025-02-16 18:54:39 - INFO - Fetching weather data for location: Grambling
+2025-02-16 18:54:39 - INFO - Weather data successfully retrieved
+2025-02-16 18:54:39 - INFO - Fetching forecast data for location: Grambling
+2025-02-16 18:54:40 - INFO - Forecast data successfully retrieved
+2025-02-16 18:54:40 - INFO - Updating weather display
+2025-02-16 18:54:40 - INFO - Updating forecast display
+2025-02-16 18:57:17 - INFO - Refreshing weather data for city: Kumasi
+2025-02-16 18:57:17 - INFO - Fetching weather data for location: Kumasi
+2025-02-16 18:57:17 - INFO - Weather data successfully retrieved
+2025-02-16 18:57:17 - INFO - Fetching forecast data for location: Kumasi
+2025-02-16 18:57:17 - INFO - Forecast data successfully retrieved
+2025-02-16 18:57:17 - INFO - Updating weather display
+2025-02-16 18:57:17 - INFO - Updating forecast display
+2025-02-16 18:57:38 - INFO - Refreshing weather data for city: Hutto
+2025-02-16 18:57:38 - INFO - Fetching weather data for location: Hutto
+2025-02-16 18:57:39 - INFO - Weather data successfully retrieved
+2025-02-16 18:57:39 - INFO - Fetching forecast data for location: Hutto
+2025-02-16 18:57:39 - INFO - Forecast data successfully retrieved
+2025-02-16 18:57:39 - INFO - Updating weather display
+2025-02-16 18:57:39 - INFO - Updating forecast display
+2025-02-16 18:57:56 - INFO - Refreshing weather data for city: New York
+2025-02-16 18:57:56 - INFO - Fetching weather data for location: New York
+2025-02-16 18:57:56 - INFO - Weather data successfully retrieved
+2025-02-16 18:57:56 - INFO - Fetching forecast data for location: New York
+2025-02-16 18:57:56 - INFO - Forecast data successfully retrieved
+2025-02-16 18:57:56 - INFO - Updating weather display
+2025-02-16 18:57:56 - INFO - Updating forecast display
+2025-02-16 18:58:37 - INFO - Refreshing weather data for city: Montana
+2025-02-16 18:58:37 - INFO - Fetching weather data for location: Montana
+2025-02-16 18:58:37 - INFO - Weather data successfully retrieved
+2025-02-16 18:58:37 - INFO - Fetching forecast data for location: Montana
+2025-02-16 18:58:37 - INFO - Forecast data successfully retrieved
+2025-02-16 18:58:37 - INFO - Updating weather display
+2025-02-16 18:58:37 - INFO - Updating forecast display
+2025-02-16 18:58:46 - INFO - Refreshing weather data for city: Alaska
+2025-02-16 18:58:46 - INFO - Fetching weather data for location: Alaska
+2025-02-16 18:58:46 - INFO - Weather data successfully retrieved
+2025-02-16 18:58:46 - INFO - Fetching forecast data for location: Alaska
+2025-02-16 18:58:47 - INFO - Forecast data successfully retrieved
+2025-02-16 18:58:47 - INFO - Updating weather display
+2025-02-16 18:58:47 - INFO - Updating forecast display
+2025-02-16 18:59:13 - INFO - Refreshing weather data for city: Sweden
+2025-02-16 18:59:13 - INFO - Fetching weather data for location: Sweden
+2025-02-16 18:59:13 - INFO - Weather data successfully retrieved
+2025-02-16 18:59:13 - INFO - Fetching forecast data for location: Sweden
+2025-02-16 18:59:13 - INFO - Forecast data successfully retrieved
+2025-02-16 18:59:13 - INFO - Updating weather display
+2025-02-16 18:59:13 - INFO - Updating forecast display
+2025-02-16 18:59:21 - INFO - Refreshing weather data for city: Norway
+2025-02-16 18:59:21 - INFO - Fetching weather data for location: Norway
+2025-02-16 18:59:21 - INFO - Weather data successfully retrieved
+2025-02-16 18:59:21 - INFO - Fetching forecast data for location: Norway
+2025-02-16 18:59:21 - INFO - Forecast data successfully retrieved
+2025-02-16 18:59:21 - INFO - Updating weather display
+2025-02-16 18:59:21 - INFO - Updating forecast display
+2025-02-16 18:59:27 - INFO - Refreshing weather data for city: Denmark
+2025-02-16 18:59:27 - INFO - Fetching weather data for location: Denmark
+2025-02-16 18:59:27 - INFO - Weather data successfully retrieved
+2025-02-16 18:59:27 - INFO - Fetching forecast data for location: Denmark
+2025-02-16 18:59:27 - INFO - Forecast data successfully retrieved
+2025-02-16 18:59:27 - INFO - Updating weather display
+2025-02-16 18:59:27 - INFO - Updating forecast display
+2025-02-16 18:59:35 - INFO - Refreshing weather data for city: Iceland
+2025-02-16 18:59:35 - INFO - Fetching weather data for location: Iceland
+2025-02-16 18:59:35 - INFO - Weather data successfully retrieved
+2025-02-16 18:59:35 - INFO - Fetching forecast data for location: Iceland
+2025-02-16 18:59:35 - INFO - Forecast data successfully retrieved
+2025-02-16 18:59:35 - INFO - Updating weather display
+2025-02-16 18:59:35 - INFO - Updating forecast display
+2025-02-16 18:59:41 - INFO - Refreshing weather data for city: Greenland
+2025-02-16 18:59:41 - INFO - Fetching weather data for location: Greenland
+2025-02-16 18:59:41 - INFO - Weather data successfully retrieved
+2025-02-16 18:59:41 - INFO - Fetching forecast data for location: Greenland
+2025-02-16 18:59:41 - INFO - Forecast data successfully retrieved
+2025-02-16 18:59:41 - INFO - Updating weather display
+2025-02-16 18:59:41 - INFO - Updating forecast display
+2025-02-16 18:59:46 - INFO - Application shutdown
+2025-02-17 01:49:00 - INFO - Reading API key
+2025-02-17 01:49:00 - INFO - Starting Weather Dashboard application
+2025-02-17 01:49:09 - INFO - Refreshing weather data for city: Grambling
+2025-02-17 01:49:09 - INFO - Fetching weather data for location: Grambling
+2025-02-17 01:49:10 - INFO - Weather data successfully retrieved
+2025-02-17 01:49:10 - INFO - Fetching forecast data for location: Grambling
+2025-02-17 01:49:10 - INFO - Forecast data successfully retrieved
+2025-02-17 01:49:10 - INFO - Updating weather display
+2025-02-17 01:49:10 - INFO - Updating forecast display
+2025-02-17 01:49:25 - INFO - Refreshing weather data for city: Kumasi
+2025-02-17 01:49:25 - INFO - Fetching weather data for location: Kumasi
+2025-02-17 01:49:25 - INFO - Weather data successfully retrieved
+2025-02-17 01:49:25 - INFO - Fetching forecast data for location: Kumasi
+2025-02-17 01:49:25 - INFO - Forecast data successfully retrieved
+2025-02-17 01:49:25 - INFO - Updating weather display
+2025-02-17 01:49:25 - INFO - Updating forecast display
+2025-02-17 01:49:32 - INFO - Refreshing weather data for city: Hutto
+2025-02-17 01:49:32 - INFO - Fetching weather data for location: Hutto
+2025-02-17 01:49:33 - INFO - Weather data successfully retrieved
+2025-02-17 01:49:33 - INFO - Fetching forecast data for location: Hutto
+2025-02-17 01:49:33 - INFO - Forecast data successfully retrieved
+2025-02-17 01:49:33 - INFO - Updating weather display
+2025-02-17 01:49:33 - INFO - Updating forecast display
+2025-02-17 01:49:45 - INFO - Refreshing weather data for city: New York
+2025-02-17 01:49:45 - INFO - Fetching weather data for location: New York
+2025-02-17 01:49:45 - INFO - Weather data successfully retrieved
+2025-02-17 01:49:45 - INFO - Fetching forecast data for location: New York
+2025-02-17 01:49:45 - INFO - Forecast data successfully retrieved
+2025-02-17 01:49:45 - INFO - Updating weather display
+2025-02-17 01:49:45 - INFO - Updating forecast display
+2025-02-17 01:50:25 - INFO - Refreshing weather data for city: Antartica
+2025-02-17 01:50:25 - INFO - Fetching weather data for location: Antartica
+2025-02-17 01:50:25 - ERROR - API request failed with status code 404
+2025-02-17 01:50:25 - WARNING - City not found: Antartica
+2025-02-17 01:50:25 - ERROR - Unexpected error: City not found: Antartica
+2025-02-17 01:50:25 - ERROR - Error fetching weather data: City not found: Antartica
+2025-02-17 01:50:25 - ERROR - Error dialog shown: City not found: Antartica
+2025-02-17 01:50:37 - INFO - Refreshing weather data for city: Australia
+2025-02-17 01:50:37 - INFO - Fetching weather data for location: Australia
+2025-02-17 01:50:38 - INFO - Weather data successfully retrieved
+2025-02-17 01:50:38 - INFO - Fetching forecast data for location: Australia
+2025-02-17 01:50:38 - INFO - Forecast data successfully retrieved
+2025-02-17 01:50:38 - INFO - Updating weather display
+2025-02-17 01:50:38 - INFO - Updating forecast display
+2025-02-17 01:50:46 - INFO - Refreshing weather data for city: Pacific
+2025-02-17 01:50:46 - INFO - Fetching weather data for location: Pacific
+2025-02-17 01:50:46 - INFO - Weather data successfully retrieved
+2025-02-17 01:50:46 - INFO - Fetching forecast data for location: Pacific
+2025-02-17 01:50:46 - INFO - Forecast data successfully retrieved
+2025-02-17 01:50:46 - INFO - Updating weather display
+2025-02-17 01:50:46 - INFO - Updating forecast display
+2025-02-17 01:51:27 - INFO - Application shutdown
+2025-02-19 11:51:49 - INFO - Reading API key
+2025-02-19 11:51:49 - INFO - Starting Weather Dashboard application
+2025-02-19 11:51:57 - INFO - Refreshing weather data for city: Grambling
+2025-02-19 11:51:57 - INFO - Fetching weather data for location: Grambling
+2025-02-19 11:51:57 - INFO - Weather data successfully retrieved
+2025-02-19 11:51:57 - INFO - Fetching forecast data for location: Grambling
+2025-02-19 11:51:57 - INFO - Forecast data successfully retrieved
+2025-02-19 11:51:57 - INFO - Updating weather display
+2025-02-19 11:51:57 - INFO - Updating forecast display
+2025-02-19 11:52:14 - INFO - Application shutdown
+2025-02-19 20:06:55 - INFO - Reading API key
+2025-02-19 20:06:55 - INFO - Starting Weather Dashboard application
+2025-02-19 20:07:05 - INFO - Refreshing weather data for city: Columbia
+2025-02-19 20:07:05 - INFO - Fetching weather data for location: Columbia
+2025-02-19 20:07:05 - INFO - Weather data successfully retrieved
+2025-02-19 20:07:05 - INFO - Fetching forecast data for location: Columbia
+2025-02-19 20:07:05 - INFO - Forecast data successfully retrieved
+2025-02-19 20:07:05 - INFO - Updating weather display
+2025-02-19 20:07:05 - INFO - Updating forecast display
+2025-02-19 20:07:12 - INFO - Refreshing weather data for city: Grambling
+2025-02-19 20:07:12 - INFO - Fetching weather data for location: Grambling
+2025-02-19 20:07:12 - INFO - Weather data successfully retrieved
+2025-02-19 20:07:12 - INFO - Fetching forecast data for location: Grambling
+2025-02-19 20:07:12 - INFO - Forecast data successfully retrieved
+2025-02-19 20:07:12 - INFO - Updating weather display
+2025-02-19 20:07:12 - INFO - Updating forecast display
+2025-02-19 20:07:28 - INFO - Application shutdown
