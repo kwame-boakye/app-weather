@@ -7,7 +7,6 @@ from ui.components.forecast_tab import ForecastTab
 from models.user_preferences import UserPreferences
 from services.weather_service import WeatherService
 from config.constants import DEFAULT_WINDOW_SIZE, MIN_WINDOW_SIZE
-from utils.voice_assistant import WeatherVoiceAssistant
 
 
 class WeatherDashboard:
@@ -20,9 +19,7 @@ class WeatherDashboard:
         self.setup_ui()
         self.setup_bindings()
 
-        # Initialize voice assistant
-        self.voice_assistant = WeatherVoiceAssistant()
-        self.setup_voice_controls()
+        # Voice assistant initialization removed
 
     def setup_window(self):
         """Configure the main window"""
@@ -33,6 +30,24 @@ class WeatherDashboard:
         style = ttk.Style()
         style.configure("tooltip.TLabel", background="#1a1a1a", foreground="white")
         style.configure("legend.TLabel", foreground="white")
+
+    def on_refresh(self):
+        """Refresh weather data"""
+        logger.info("Refreshing weather data")
+        try:
+            # Add logic to update weather data
+            pass
+        except Exception as e:
+            logger.error(f"Error refreshing weather data: {e}")
+
+    def on_theme_change(self):
+        """Toggle theme between light and dark"""
+        logger.info("Changing theme")
+        try:
+            # Add logic to change theme
+            pass
+        except Exception as e:
+            logger.error(f"Error changing theme: {e}")
 
     def setup_ui(self):
         """Setup the main UI components"""

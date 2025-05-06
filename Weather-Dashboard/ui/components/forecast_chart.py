@@ -245,3 +245,10 @@ class ForecastChart(ttk.Frame):
             self.canvas.create_text(
                 x, height - padding + 15, text=f"Day {i+1}", fill="white", anchor="n"
             )
+
+    def on_mouse_leave(self, event):
+        """Handle mouse leaving the chart area"""
+        # Clear any tooltips or highlights when mouse leaves the chart
+        if hasattr(self, "tooltip"):
+            self.tooltip.destroy()
+            delattr(self, "tooltip")

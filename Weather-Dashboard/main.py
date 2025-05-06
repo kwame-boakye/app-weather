@@ -1,20 +1,24 @@
 import tkinter as tk
-from ui.app import WeatherDashboard
-from utils.logger import logger
+from tkinter import ttk
+from ui.components.weather_tab import WeatherTab
 
 
 def main():
-    try:
-        logger.info("Starting Weather Dashboard application")
-        with open("api_key.txt", "rt") as f:
-            api_key = f.read().strip()
+    root = tk.Tk()
+    root.title("Weather Dashboard")
 
-        root = tk.Tk()
-        app = WeatherDashboard(root, api_key)
-        root.mainloop()
-    except Exception as e:
-        logger.critical(f"Critical error in main loop: {str(e)}")
-        raise
+    # Set a minimum window size
+    root.minsize(600, 400)
+
+    # Create notebook (tabbed interface)
+    notebook = ttk.Notebook(root)
+    notebook.pack(expand=True, fill="both", padx=10, pady=10)
+
+    # Add Weather Tab
+    weather_tab = WeatherTab(notebook)
+    notebook.add(weather_tab, text="Weather")
+
+    root.mainloop()
 
 
 if __name__ == "__main__":

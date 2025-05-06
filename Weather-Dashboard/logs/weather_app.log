@@ -617,3 +617,33 @@
 2025-02-19 20:07:12 - INFO - Updating weather display
 2025-02-19 20:07:12 - INFO - Updating forecast display
 2025-02-19 20:07:28 - INFO - Application shutdown
+2025-05-06 15:05:29 - INFO - Starting Weather Dashboard application
+2025-05-06 15:05:30 - CRITICAL - Critical error in main loop: 'WeatherDashboard' object has no attribute 'on_refresh'
+2025-05-06 15:08:54 - INFO - Starting Weather Dashboard application
+2025-05-06 15:08:55 - CRITICAL - Critical error in main loop: 'WeatherDashboard' object has no attribute 'on_refresh'
+2025-05-06 15:09:45 - INFO - Starting Weather Dashboard application
+2025-05-06 15:09:46 - CRITICAL - Critical error in main loop: 'WeatherDashboard' object has no attribute 'on_refresh'
+2025-05-06 15:12:14 - INFO - Starting Weather Dashboard application
+2025-05-06 15:12:15 - CRITICAL - Critical error in main loop: 'WeatherDashboard' object has no attribute 'on_refresh'
+2025-05-06 15:12:26 - INFO - Starting Weather Dashboard application
+2025-05-06 15:12:26 - CRITICAL - Critical error in main loop: 'WeatherDashboard' object has no attribute 'on_refresh'
+2025-05-06 15:12:42 - INFO - Starting Weather Dashboard application
+2025-05-06 15:12:42 - CRITICAL - Critical error in main loop: 'WeatherDashboard' object has no attribute 'on_refresh'
+2025-05-06 16:31:11 - INFO - Starting Weather Dashboard application
+2025-05-06 16:31:11 - CRITICAL - Critical error in main loop: Header.__init__() takes 2 positional arguments but 4 were given
+2025-05-06 16:32:28 - INFO - Starting Weather Dashboard application
+2025-05-06 16:32:29 - CRITICAL - Critical error in main loop: 'ForecastChart' object has no attribute 'on_mouse_leave'
+2025-05-06 16:34:58 - INFO - Starting Weather Dashboard application
+2025-05-06 16:34:58 - CRITICAL - Critical error in main loop: bad window path name "<ui.components.weather_tab.WeatherTab object at 0x78accc49dd30>"
+2025-05-06 16:43:21 - INFO - Reading API key
+2025-05-06 16:43:21 - INFO - Starting Weather Dashboard application
+2025-05-06 16:43:33 - INFO - Refreshing weather data for city: Grambling
+2025-05-06 16:43:33 - INFO - Fetching weather data for location: Grambling
+2025-05-06 16:43:33 - INFO - Weather data successfully retrieved
+2025-05-06 16:43:33 - INFO - Fetching forecast data for location: Grambling
+2025-05-06 16:43:33 - INFO - Forecast data successfully retrieved
+2025-05-06 16:43:33 - INFO - Updating weather display
+2025-05-06 16:43:33 - INFO - Updating forecast display
+2025-05-06 16:43:33 - WARNING - Unknown weather condition: heavy intensity rain
+2025-05-06 16:46:55 - INFO - Reading API key
+2025-05-06 16:46:55 - INFO - Starting Weather Dashboard application
